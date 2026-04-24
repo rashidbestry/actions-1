@@ -6,6 +6,9 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout repo
+              uses: actions/checkout@main
+              
             - name: Welcome message
               run: echo "My First Github Actions Job"
 
